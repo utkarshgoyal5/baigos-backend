@@ -28,6 +28,7 @@ public class Property {
     @JoinColumn(name = "category_id")
     private Category category;
     @ManyToOne
+    @JoinColumn(name = "id")
     private User user;
 
 

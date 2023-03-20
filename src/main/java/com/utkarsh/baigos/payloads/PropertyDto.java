@@ -16,11 +16,11 @@ import java.util.Date;
 @Setter
 public class PropertyDto {
 
-    private Integer propertyId;
     private String title;
     private String description;
     private String imageName;
-    private Date addedDate;
-    private Category category;
-    private User user;
+    private CategoryDto category;
+    private UserDto user;
+    private int categoryId;
+    private int userId;
 }

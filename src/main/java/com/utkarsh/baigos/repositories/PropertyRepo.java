@@ -10,4 +10,5 @@ import java.util.List;
 public interface PropertyRepo extends JpaRepository<Property, Integer> {
     List<Property> findByUser(User user);
     List<Property> findByCategory(Category category);
+    List<Property> findByTitleContaining(String title);
 }
